@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
-	"name": "Bandcamp Wishlist Autoplayer",
+	"name": "Bandcamp Autoplayer",
 	"version": "1.0",
-	"description": "Автоматическое воспроизведение и управление треками из Bandcamp Wishlist",
+	"description": "Automatically play tracks from your Bandcamp with a handy popup interface.",
 	"permissions": ["storage", "scripting"],
 	"host_permissions": ["*://*.bandcamp.com/*"],
 	"action": {
