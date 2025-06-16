@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Bandcamp Wishlist</title>
+		<link rel="stylesheet" href="popup.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<label class="toggle">
+					<input type="checkbox" id="autoplay-toggle" />
+					🔁 Автоплей следующих альбомов
+				</label>
+				<div class="controls">
+					<button id="prev-track" title="Предыдущий трек">⏮️</button>
+					<button id="pause-track" title="Пауза">⏸️</button>
+					<button id="play-track" title="Старт">▶️</button>
+					<button id="next-track" title="Следующий трек">⏭️</button>
+				</div>
+			</div>
+
+			<div class="current">
+				<span class="label">Текущий трек:</span>
+				<span id="current-title">—</span>
+				<!-- <button id="open-album" title="Открыть альбом">💬</button> -->
+			</div>
+
+			<ul id="track-list">
+				<li>Загрузка треков...</li>
+			</ul>
+		</div>
+
+		<script src="popup.js"></script>
+	</body>
+</html>

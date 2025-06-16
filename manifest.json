@@ -1,0 +1,27 @@
+{
+	"manifest_version": 3,
+	"name": "Bandcamp Wishlist Autoplayer",
+	"version": "1.0",
+	"description": "Автоматическое воспроизведение и управление треками из Bandcamp Wishlist",
+	"permissions": ["storage", "scripting"],
+	"host_permissions": ["*://*.bandcamp.com/*"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icon16.png",
+			"48": "icon48.png",
+			"128": "icon128.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.bandcamp.com/*"],
+			"js": ["content.js"]
+		}
+	],
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	}
+}
