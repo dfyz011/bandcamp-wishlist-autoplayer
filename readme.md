@@ -49,7 +49,7 @@ chrome://extensions/
 
 ```bash
 cd bandcamp-wishlist-autoplayer
-zip -r ../bandcamp-wishlist-autoplayer.zip .
+zip -r bandcamp-extension.zip . -x "*.git*" "*.DS_Store"
 ```
 
 **On Windows:**
