@@ -66,6 +66,7 @@ zip -r bandcamp-extension.zip . -x "*.git*" "*.DS_Store"
 - Track progress bar
 - Link to track
 - Link to album
+- Bugs with i18n because some stuff creating in js
 - Add support for album queue
 - Dark theme support for popup
 
