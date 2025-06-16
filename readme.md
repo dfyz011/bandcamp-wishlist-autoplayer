@@ -62,6 +62,10 @@ zip -r ../bandcamp-wishlist-autoplayer.zip .
 
 ## 💡 Future Ideas
 
+- Bandcamp just hide htmls when switch between tabs, so list of tracks is wrong
+- Track progress bar
+- Link to track
+- Link to album
 - Add support for album queue
 - Dark theme support for popup
 
