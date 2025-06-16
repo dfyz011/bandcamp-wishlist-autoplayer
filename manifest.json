@@ -1,8 +1,9 @@
 {
 	"manifest_version": 3,
-	"name": "Bandcamp Autoplayer",
+	"name": "__MSG_ext_name__",
+	"description": "__MSG_ext_description__",
 	"version": "1.0",
-	"description": "Automatically play tracks from your Bandcamp with a handy popup interface.",
+	"default_locale": "en",
 	"permissions": ["storage", "scripting"],
 	"host_permissions": ["*://*.bandcamp.com/*"],
 	"action": {
