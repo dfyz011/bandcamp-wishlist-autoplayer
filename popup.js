@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	prevBtn.addEventListener("click", () =>
 		controlMessage("PREV_TRACK", renderTrackList)
 	);
-	openAlbumBtn.addEventListener("click", () => controlMessage("OPEN_ALBUM"));
+	// openAlbumBtn.addEventListener("click", () => controlMessage("OPEN_ALBUM"));
 
 	// Initial render
 	chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
