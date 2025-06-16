@@ -19,7 +19,7 @@ Automatically play tracks from your Bandcamp Wishlist with a handy popup interfa
 1. Clone or download the repository:
 
 ```
-git clone https://github.com/yourusername/bandcamp-wishlist-autoplayer.git
+git clone https://github.com/dfyz011/bandcamp-wishlist-autoplayer.git
 ```
 
 2. Open Google Chrome and go to:
