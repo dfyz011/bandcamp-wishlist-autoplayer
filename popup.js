@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", async () => {
 	const autoplayToggle = document.getElementById("autoplay-toggle");
 	const trackListEl = document.getElementById("track-list");
+
+	const currentCoverEl = document.getElementById("current-cover");
 	const currentTitleEl = document.getElementById("current-title");
 	const openAlbumBtn = document.getElementById("open-album");
 
@@ -136,7 +138,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 					coverUrl,
 				} = track;
 				const li = document.createElement("li");
-				li.textContent = `${index + 1} ${trackTitle} by ${artist}`;
+
+				const img = document.createElement("img");
+				img.src = coverUrl || "";
+				img.alt = "cover";
+				img.className = "track-cover";
+				li.appendChild(img);
+
+				const span = document.createElement("span");
+				span.textContent = `${index + 1} ${trackTitle} by ${artist}`;
+				li.appendChild(span);
 				li.addEventListener("click", () => {
 					chrome.tabs.sendMessage(
 						tab.id,
@@ -149,7 +160,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 				});
 				if (response.currentIndex === index) {
 					li.classList.add("playing");
-					currentTitleEl.textContent = trackTitle;
+					currentTitleEl.textContent = `${trackTitle} by ${artist}`;
+
+					if (coverUrl) {
+						currentCoverEl.src = coverUrl;
+						currentCoverEl.style.display = "block";
+					} else {
+						currentCoverEl.style.display = "none";
+					}
 				}
 				trackListEl.appendChild(li);
 			});
